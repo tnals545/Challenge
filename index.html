@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core">
+    <title>Momentum App</title>
+</head>
+
+<body>
+    <span id="clock">00:00:00</span>
+    <form class="hidden" id="login-form">
+        <input required maxlength="15" type="text" placeholder="What is your name?" />
+    </form>
+    <span id="greeting" class="hidden"></span>
+    <div id="quote" class="item-group" xyz="fade">
+        <button id="logout-delete" type="button"><img class="hidden" src="./img/x.png" /></button>
+    </div>
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required>
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <div id="quote" class="item-group" xyz="fade">
+        <strong>
+            <div></div>
+            <div class="xyz-out"></div>
+        </strong>
+    </div>
+
+    <script src="src/greetings.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/quotes.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/weather.js"></script>
+</body>
+
+</html>
